@@ -159,7 +159,7 @@ L'AppID du serveur est `223350`. Installer ou mettre à jour DayZ avec SteamCMD,
 +quit
 ```
 
-## 111 — Mods Workshop
+## 11 — Mods Workshop
 
 **Contexte : Utilisateur dayz**
 
