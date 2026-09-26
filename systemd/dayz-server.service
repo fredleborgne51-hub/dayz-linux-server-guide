@@ -1,0 +1,20 @@
+[Unit]
+Description=DayZ Dedicated Server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/dayz/servers/dayz-server
+User=dayz
+Group=dayz
+ExecStartPre=/home/dayz/servers/dayz-server/update.sh
+ExecStart=/home/dayz/servers/dayz-server/start.sh
+TimeoutStopSec=90
+KillMode=control-group
+LimitNOFILE=100000
+Restart=on-abnormal
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
