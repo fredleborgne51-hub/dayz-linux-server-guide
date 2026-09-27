@@ -93,7 +93,7 @@ Pour plusieurs instances, ajouter explicitement les unités systemd correspondan
 
 **Contexte : Utilisateur avec droits sudo**
 
-Créer `/etc/systemd/system/dayz-server.service` :
+Créer `/etc/systemd/system/dayz-server.service` : Le fichier disponible dans [`systemd/dayz-server.service`](systemd/dayz-server.service)
 
 ```ini
 [Unit]
