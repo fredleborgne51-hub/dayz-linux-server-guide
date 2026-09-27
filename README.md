@@ -194,7 +194,7 @@ Lines beginning with `#` (comments) and blank lines are ignored. To disable a mo
 
 Copy the validated `update.sh` script to `~/servers/dayz-server/update.sh`. It validates `mods.conf`, updates DayZ and the Workshop mods, prepares the links and `.bikey` keys, then generates `mod_list.conf`.
 
-The complete file is available in [`scripts/EN/update.sh`](scripts/EN/update.sh).
+The complete file is available in [`scripts/EN/update.sh`](scripts/EN/update.sh). Change the STEAM_USER variable to your Steam account name.
 
 
 Then make the script executable:
