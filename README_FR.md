@@ -196,7 +196,7 @@ Les lignes commençant par `#` (commentaire) et les lignes vides sont ignorées.
 
 Copier le script `update.sh` validé dans `~/servers/dayz-server/update.sh`. Il valide `mods.conf`, met à jour DayZ et les mods Workshop, prépare les liens et les clés `.bikey`, puis génère `mod_list.conf`.
 
-Le fichier complet est disponible dans [`scripts/FR/update.sh`](scripts/FR/update.sh).
+Le fichier complet est disponible dans [`scripts/FR/update.sh`](scripts/FR/update.sh). Modifiez la variable STEAM_USER par votre identifiant Steam .
 
 
 Puis rendre le script exécutable :
