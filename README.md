@@ -1,5 +1,7 @@
 # DAYZ — LINUX DEDICATED SERVER - Updates - Mod Management
 
+[FR French version](README_FR.md)
+
 ## Installation Checklist — V1.4
 
 *Installation • CLI / SSH • Mods • Updates • systemd*
