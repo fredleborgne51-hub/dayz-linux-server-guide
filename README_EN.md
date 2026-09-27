@@ -92,7 +92,7 @@ For multiple instances, explicitly add the corresponding systemd units.
 
 **Context: User with sudo privileges**
 
-Create `/etc/systemd/system/dayz-server.service`:
+Create `/etc/systemd/system/dayz-server.service`: The complete file is available in [`systemd/dayz-server.service`](systemd/dayz-server.service)
 
 ```ini
 [Unit]
@@ -370,7 +370,7 @@ Repeated connections are retained: each `is connected` event constitutes a histo
 Add the following alias to `~/.bashrc`:
 
 ```bash
-alias joueurs_chernarus='for f in /home/dayz/servers/dayz-server/profiles/*.ADM; do d=$(basename "$f" .ADM | sed -E "s#DayZServer_([0-9]{4})-([0-9]{2})-([0-9]{2})_.*#\3/\2/\1#"); grep -hE '\''Player ".*" \(id=.*\) is connected'\'' "$f" | sed -E "s#^([0-9:]+) \| Player \"(.*)\" \(id=([^ ]+) pos=.*#${d} | \1 | \2 | \3#"; done | sort -t"/" -k3,3n -k2,2n -k1,1n'
+alias players_chernarus='for f in /home/dayz/servers/dayz-server/profiles/*.ADM; do d=$(basename "$f" .ADM | sed -E "s#DayZServer_([0-9]{4})-([0-9]{2})-([0-9]{2})_.*#\3/\2/\1#"); grep -hE '\''Player ".*" \(id=.*\) is connected'\'' "$f" | sed -E "s#^([0-9:]+) \| Player \"(.*)\" \(id=([^ ]+) pos=.*#${d} | \1 | \2 | \3#"; done | sort -t"/" -k3,3n -k2,2n -k1,1n'
 ```
 
 After adding or modifying the alias, reload the shell configuration:
@@ -386,31 +386,31 @@ The `|` character (pipe) passes the output of one command to the next and allows
 For example, search all connections from a month:
 
 ```bash
-joueurs_chernarus | grep '/08/2026'
+players_chernarus | grep '/08/2026'
 ```
 
 Search several days:
 
 ```bash
-joueurs_chernarus | grep -E '17/09/2026|18/09/2026|19/09/2026'
+players_chernarus | grep -E '17/09/2026|18/09/2026|19/09/2026'
 ```
 
 Search for a player across several days:
 
 ```bash
-joueurs_chernarus | grep -E '17/09/2026|18/09/2026|19/09/2026' | grep -i 'John Doe'
+players_chernarus | grep -E '17/09/2026|18/09/2026|19/09/2026' | grep -i 'John Doe'
 ```
 
 Search for several players:
 
 ```bash
-joueurs_chernarus | grep -Ei 'John Doe|Chuck Norris|Tom Mason'
+players_chernarus | grep -Ei 'John Doe|Chuck Norris|Tom Mason'
 ```
 
 Count connections matching a filter:
 
 ```bash
-joueurs_chernarus | grep '/08/2026' | wc -l
+players_chernarus | grep '/08/2026' | wc -l
 ```
 
 ### Multiple DayZ instances
