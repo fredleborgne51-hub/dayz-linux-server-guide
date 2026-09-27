@@ -137,6 +137,7 @@ whoami
 
 **Contexte : Utilisateur dayz**
 
+Lors de la première connexion, SteamCMD demande le mot de passe du compte Steam. Un code Steam Guard peut également être demandé si la protection est activée.
 Lancer SteamCMD, se connecter avec le compte prévu pour le serveur, puis quitter.
 
 ```bash
