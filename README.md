@@ -1,4 +1,4 @@
-# DAYZ — SERVEUR DÉDIÉ LINUX
+# DAYZ — SERVEUR DÉDIÉ LINUX - Mise à jour - Gestion des mods 
 
 ## Checklist d'installation — V1.4
 
