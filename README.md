@@ -194,7 +194,7 @@ Lines beginning with `#` (comments) and blank lines are ignored. To disable a mo
 
 Copy the validated `update.sh` script to `~/servers/dayz-server/update.sh`. It validates `mods.conf`, updates DayZ and the Workshop mods, prepares the links and `.bikey` keys, then generates `mod_list.conf`.
 
-The complete file is available in [`scripts/update.sh`](scripts/update.sh).
+The complete file is available in [`scripts/EN/update.sh`](scripts/EN/update.sh).
 
 
 Then make the script executable:
@@ -223,7 +223,7 @@ Example:
 
 Copy the validated `start.sh` script into the server directory. It reads only `mod_list.conf` and starts DayZ. The port used in this base installation is `2301`; it can be adapted for another instance.
 
-The complete file is available in [`scripts/start.sh`](scripts/start.sh).
+The complete file is available in [`scripts/EN/start.sh`](scripts/EN/start.sh).
 
 
 Then make the script executable:
