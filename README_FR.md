@@ -196,7 +196,7 @@ Les lignes commençant par `#` (commentaire) et les lignes vides sont ignorées.
 
 Copier le script `update.sh` validé dans `~/servers/dayz-server/update.sh`. Il valide `mods.conf`, met à jour DayZ et les mods Workshop, prépare les liens et les clés `.bikey`, puis génère `mod_list.conf`.
 
-Le fichier complet est disponible dans [`scripts/update.sh`](scripts/update.sh).
+Le fichier complet est disponible dans [`scripts/FR/update.sh`](scripts/FR/update.sh).
 
 
 Puis rendre le script exécutable :
@@ -225,7 +225,7 @@ Exemple :
 
 Copier le script `start.sh` validé dans le répertoire du serveur. Il lit exclusivement `mod_list.conf` et lance DayZ. Le port utilisé dans cette installation de base est `2301` ; il peut être adapté pour une autre instance.
 
-Le fichier complet est disponible dans [`scripts/start.sh`](scripts/start.sh).
+Le fichier complet est disponible dans [`scripts/FR/start.sh`](scripts/FR/start.sh).
 
 
 Puis rendre le script exécutable :
