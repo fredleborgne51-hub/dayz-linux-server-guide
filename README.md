@@ -135,6 +135,7 @@ whoami
 
 **Context: User `dayz`**
 
+On the first login, SteamCMD will prompt for the Steam account password. A Steam Guard code may also be requested if Steam Guard is enabled.
 Launch SteamCMD, log in with the account intended for the server, then exit.
 
 ```bash
